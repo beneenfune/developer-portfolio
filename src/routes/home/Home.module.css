@@ -1,0 +1,41 @@
+/* Home.module.css */
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .header {
+    background-color: #567aac;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .mainContent {
+    margin: 20px 0;
+  }
+  
+  .linkButton {
+    background-color: #9fb3ce;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .linkButton:hover {
+    background-color: #849db9;
+  }
+  
+  .footer {
+    margin-top: auto;
+    padding: 10px;
+    background-color: #a5aab2;
+    width: 100%;
+    text-align: center;
+  }
+  

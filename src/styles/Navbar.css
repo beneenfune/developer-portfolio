@@ -1,0 +1,43 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 145px; /* Adjust the width as needed */
+    background-color: rgba(237, 235, 222, 1); /* Set the navbar background color */
+    padding: 15px 0; /* Adjust padding as needed */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar a {
+    font-size: 14px;
+    color: #6f756d;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.5s ease, color 0.3s ease; /* Adds a smooth transition */
+}
+
+.navbar a span {
+    display: block;
+    padding: 10px 15px; /* Apply padding to the span instead of the link */
+    border-radius: 4px; /* Optional: adds rounded corners */
+    transition: background-color 0.5s ease; /* Smooth transition for background color */
+}
+
+.navbar a:hover span {
+    background-color: #e5e6e1; /* Slightly darker version of the original color */
+}
+
+.navbar a.clicked span {
+    background-color: #dce1db; /* Even darker version for clicked state */
+    color: #62665f; /* Optional: change text color for clicked state */
+    transition: background-color 0.1s ease; /* Smooth transition for background color */
+}
+
+.navbar a.active span {
+    font-weight: bold; /* Optional: makes the active link bold */
+    transition: font-weight 0.1s ease; /* Smooth transition for background color */
+
+}
