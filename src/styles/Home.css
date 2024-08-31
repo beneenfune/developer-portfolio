@@ -1,0 +1,40 @@
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .mainContent {
+    margin: 20px 0;
+  }
+  
+  .linkButton {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .linkButton:hover {
+    background-color: #005f73;
+  }
+  
+  .footer {
+    margin-top: auto;
+    padding: 10px;
+    background-color: #f1f1f1;
+    width: 100%;
+    text-align: center;
+  }
+  
