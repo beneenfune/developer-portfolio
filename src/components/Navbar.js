@@ -1,5 +1,6 @@
-import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
+import { Link as useLocation } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import '../styles/Navbar.css';
 
 const Navbar = () => {
@@ -12,69 +13,103 @@ const Navbar = () => {
 
     return (
         <div className="navbar">
-            <Link
+            <ScrollLink
                 to="/"
+                smooth={true}
+                duration={500}
                 className={`${location.pathname === "/" ? "active" : ""} ${clickedLink === "/" ? "clicked" : ""}`}
                 onClick={() => handleClick("/")}
             >
                 <span>Home</span>
-            </Link>
-            <Link
-                to="/about"
-                className={`${location.pathname === "/about" ? "active" : ""} ${clickedLink === "/about" ? "clicked" : ""}`}
+            </ScrollLink>
+
+            {/* About Section */}
+            <ScrollLink
+                to="about"
+                smooth={true}
+                duration={500}
+                className={`${location.hash === "#about" ? "active" : ""} ${clickedLink === "/about" ? "clicked" : ""}`}
                 onClick={() => handleClick("/about")}
             >
                 <span>About</span>
-            </Link>
-            <Link
-                to="/experience"
-                className={`${location.pathname === "/experience" ? "active" : ""} ${clickedLink === "/experience" ? "clicked" : ""}`}
+            </ScrollLink>
+
+            {/* Experience Section */}
+            <ScrollLink
+                to="experience"
+                smooth={true}
+                duration={500}
+                className={`${location.hash === "#experience" ? "active" : ""} ${clickedLink === "/experience" ? "clicked" : ""}`}
                 onClick={() => handleClick("/experience")}
             >
                 <span>Experience</span>
-            </Link>
-            <Link
-                to="/projects"
-                className={`${location.pathname === "/projects" ? "active" : ""} ${clickedLink === "/projects" ? "clicked" : ""}`}
+            </ScrollLink>
+
+            {/* Projects Section */}
+            <ScrollLink
+                to="projects"
+                smooth={true}
+                duration={500}
+                className={`${location.hash === "#projects" ? "active" : ""} ${clickedLink === "/projects" ? "clicked" : ""}`}
                 onClick={() => handleClick("/projects")}
             >
                 <span>Projects</span>
-            </Link>
-            <Link
-                to="/skills"
-                className={`${location.pathname === "/skills" ? "active" : ""} ${clickedLink === "/skills" ? "clicked" : ""}`}
+            </ScrollLink>
+
+            {/* Skills Section */}
+            <ScrollLink
+                to="skills"
+                smooth={true}
+                duration={500}
+                className={`${location.hash === "#skills" ? "active" : ""} ${clickedLink === "/skills" ? "clicked" : ""}`}
                 onClick={() => handleClick("/skills")}
             >
                 <span>Skills</span>
-            </Link>
-            <Link
-                to="/university"
-                className={`${location.pathname === "/university" ? "active" : ""} ${clickedLink === "/university" ? "clicked" : ""}`}
+            </ScrollLink>
+
+            {/* University Section */}
+            <ScrollLink
+                to="university"
+                smooth={true}
+                duration={500}
+                className={`${location.hash === "#university" ? "active" : ""} ${clickedLink === "/university" ? "clicked" : ""}`}
                 onClick={() => handleClick("/university")}
             >
                 <span>University</span>
-            </Link>
-            <Link
-                to="/blogs"
-                className={`${location.pathname === "/blogs" ? "active" : ""} ${clickedLink === "/blogs" ? "clicked" : ""}`}
+            </ScrollLink>
+
+            {/* Blogs Section */}
+            <ScrollLink
+                to="blogs"
+                smooth={true}
+                duration={500}
+                className={`${location.hash === "#blogs" ? "active" : ""} ${clickedLink === "/blogs" ? "clicked" : ""}`}
                 onClick={() => handleClick("/blogs")}
             >
                 <span>Blogs</span>
-            </Link>
-            <Link
-                to="/contact"
-                className={`${location.pathname === "/contact" ? "active" : ""} ${clickedLink === "/contact" ? "clicked" : ""}`}
+            </ScrollLink>
+
+            {/* Contact Section */}
+            <ScrollLink
+                to="contact"
+                smooth={true}
+                duration={500}
+                className={`${location.hash === "#contact" ? "active" : ""} ${clickedLink === "/contact" ? "clicked" : ""}`}
                 onClick={() => handleClick("/contact")}
             >
                 <span>Contact</span>
-            </Link>
-            <Link
-                to="/resume"
-                className={`${location.pathname === "/resume" ? "active" : ""} ${clickedLink === "/resume" ? "clicked" : ""}`}
+            </ScrollLink>
+
+            {/* Resume Section */}
+            <ScrollLink
+                to="resume"
+                smooth={true}
+                duration={500}
+                className={`${location.hash === "#resume" ? "active" : ""} ${clickedLink === "/resume" ? "clicked" : ""}`}
                 onClick={() => handleClick("/resume")}
             >
                 <span>Resume</span>
-            </Link>
+            </ScrollLink>
         </div>
     );
 };
